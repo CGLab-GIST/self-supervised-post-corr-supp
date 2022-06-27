@@ -1,0 +1,154 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Research Results" name="description"/>
+        <title>
+            Supplementary Material for Self-Supervised Post-Correction for Monte Carlo Denoising
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css"/>
+        <link href="utils/report.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="content" id="content">
+            <h1 class="title">
+                Supplementary Material for Self-Supervised Post-Correction for Monte Carlo Denoising
+            </h1>
+            <p class="authors">
+                <a href="https://cglab.gist.ac.kr/people/">Jonghee Back</a><sup>1</sup>, <a href="https://sonhua.github.io/">Binh-Son Hua</a><sup>2</sup>, <a href="https://cs.uwaterloo.ca/~thachisu/">Toshiya Hachisuka</a><sup>3</sup>, and <a href="https://cglab.gist.ac.kr/people/bochang.html">Bochang Moon</a><sup>1</sup>
+            </p>
+			<p class="authors">
+                <sup>1</sup> GIST, South Korea,
+				<sup>2</sup> VinAI Research, Vietnam,
+				<sup>3</sup> University of Waterloo, Canada
+            </p>
+            <h2>
+                Overview
+            </h2>
+			<p>
+			This supplementary material illustrates equal-time comparisons between recent Monte Carlo (MC) image denoising methods and their corrected results using our method.
+			</p>
+			<p>
+			We test three denoising methods as our correlated images: KPCN [Bako et al. 2017], AMCD [Xu et al. 2019] and AFGSA [Yu et al. 2021].
+			</p>
+			<p>
+			We also compare deep combiner (DC) [Back et al. 2020] using retrained models with the results corrected by our approach given a same running time.
+			</p>
+			<p>
+			In the tables, we provide the total running time, samples per pixel (spp) and numerical accuracy (relative L2 [Rousselle et al. 2011] with small value 1e-2) for each result.
+			</p>
+            <h2>
+                Equal-Time Comparisons between MC Image Denoising Methods and Our Post-Correction
+            </h2>
+            <div class="element-container">
+                <div class="report-preview">
+                    <a href="compare_denoisers/bathroom/index.html">
+                        <img class="report-thumb-2" src="compare_denoisers/bathroom/thumb.png"/>
+                    </a>
+                    <br/>
+                    Bathroom
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/hair/index.html">
+                        <img class="report-thumb-1" src="compare_denoisers/hair/thumb.png"/>
+                    </a>
+                    <br/>
+                    Hair
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/dragon/index.html">
+                        <img class="report-thumb-1" src="compare_denoisers/dragon/thumb.png"/>
+                    </a>
+                    <br/>
+                    Dragon
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/sanmiguel/index.html">
+                        <img class="report-thumb-1" src="compare_denoisers/sanmiguel/thumb.png"/>
+                    </a>
+                    <br/>
+                    Sanmiguel
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/chopper-titan/index.html">
+                        <img class="report-thumb-2" src="compare_denoisers/chopper-titan/thumb.png"/>
+                    </a>
+                    <br/>
+                    Chopper-titan
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/hotel/index.html">
+                        <img class="report-thumb-2" src="compare_denoisers/hotel/thumb.png"/>
+                    </a>
+                    <br/>
+                    Hotel
+                </div>
+                <div class="report-preview">
+                    <a href="compare_denoisers/landscape/index.html">
+                        <img class="report-thumb-2" src="compare_denoisers/landscape/thumb.png"/>
+                    </a>
+                    <br/>
+                    Landscape
+                </div>
+            </div>
+			<h2>
+                Equal-Time Comparisons between DC and Our Post-Correction
+            </h2>
+            <div class="element-container">
+                <div class="report-preview">
+                    <a href="compare_dc/bathroom/index.html">
+                        <img class="report-thumb-2" src="compare_dc/bathroom/thumb.png"/>
+                    </a>
+                    <br/>
+                    Bathroom
+                </div>
+                <div class="report-preview">
+                    <a href="compare_dc/hair/index.html">
+                        <img class="report-thumb-1" src="compare_dc/hair/thumb.png"/>
+                    </a>
+                    <br/>
+                    Hair
+                </div>
+                <div class="report-preview">
+                    <a href="compare_dc/dragon/index.html">
+                        <img class="report-thumb-1" src="compare_dc/dragon/thumb.png"/>
+                    </a>
+                    <br/>
+                    Dragon
+                </div>
+                <div class="report-preview">
+                    <a href="compare_dc/sanmiguel/index.html">
+                        <img class="report-thumb-1" src="compare_dc/sanmiguel/thumb.png"/>
+                    </a>
+                    <br/>
+                    Sanmiguel
+                </div>
+            </div>
+            <h2>
+                References
+            </h2>
+			<p>
+			    [Bako et al. 2017] Steve Bako, Thijs Vogels, Brian Mcwilliams, Mark Meyer, Jan Novák, Alex Harvill, Pradeep Sen, Tony Derose, and Fabrice Rousselle. 2017. Kernel-Predicting Convolutional Networks for Denoising Monte Carlo Renderings. ACM Trans. Graph. 36, 4, Article 97 (2017), 14 pages
+			</p>
+            <p>
+			    [Xu et al. 2019] Bing Xu, Junfei Zhang, Rui Wang, Kun Xu, Yong-Liang Yang, Chuan Li, and Rui Tang. 2019. Adversarial Monte Carlo Denoising with Conditioned Auxiliary Feature Modulation. ACM Trans. Graph. 38, 6, Article 224 (2019), 12 pages.
+			</p>
+            <p>
+			    [Yu et al. 2021] Jiaqi Yu, Yongwei Nie, Chengjiang Long, Wenju Xu, Qing Zhang, and Guiqing Li. 2021. Monte Carlo Denoising via Auxiliary Feature Guided Self-Attention. ACM Trans. Graph. 40, 6, Article 273 (2021), 13 pages.
+			</p>
+            <p>
+			    [Back et al. 2020] Jonghee Back, Binh-Son Hua, Toshiya Hachisuka, and Bochang Moon. 2020. Deep Combiner for Independent and Correlated Pixel Estimates. ACM Trans. Graph. 39, 6, Article 242 (2020), 12 pages.
+			</p>
+            <p>
+			    [Rousselle et al. 2011] Fabrice Rousselle, Claude Knaus, and Matthias Zwicker. 2011. Adaptive Sampling and Reconstruction Using Greedy Error Minimization. ACM Trans. Graph. 30, 6, Article 159 (2011), 12 pages
+			</p>
+            <h2>
+                Acknowledgements
+            </h2>
+			<p>
+			    We'd like to thank nacimus (Bathroom), Cem Yuksel (Hair), Christian Schüller (Dragon), Guillermo M. Leal Llaguno (Sanmiguel), julioras3d (Chopper-titan), bluewhalestudios (Hotel), Jan-Walter Schliep, Burak Kahraman and Timm Dapper (Landscape) for providing the following test scenes and Joey Litalien, Jan Novák and Benedikt Bitterli for the interactive viewer.
+			</p>
+        </div>
+    </body>
+</html>
