@@ -35,7 +35,7 @@ const data =
                     "image": "images/afgsa_dc_ours.png"
                 },
                 {
-                    "title": "Reference (64K spp)",
+                    "title": "Reference (16K spp)",
                     "version": "-",
                     "image": "images/Reference.png"
                 }
